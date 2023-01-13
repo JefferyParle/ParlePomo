@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  transition: 1s;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+.app {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  .logo {
+    color: white;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+  }
+
+  .counter-container {
+    background-color: rgba($color: white, $alpha: 0.2);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+    .select-btns button {
+      margin: 0 5px;
+      background-color: transparent;
+      padding: 2px 5px;
+      border-radius: 3px;
+      border: none;
+      color: white;
+      font-family: "Sofia Sans Semi Condensed", sans-serif;
+      font-size: 18px;
+    }
+
+    .counter {
+      color: white;
+      font-size: 65px;
+      padding: 10px 0;
+    }
+
+    .pause-btn {
+      border: none;
+      font-family: "Sofia Sans Semi Condensed", sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      padding: 10px 25px;
+      letter-spacing: 5px;
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
+
+    .next-btn {
+      position: relative;
+      left: 20px;
+      border: 2px solid white;
+      border-radius: 50%;
+      padding: 10px 13px;
+      font-weight: 500;
+      background-color: transparent;
+      color: white;
+    }
+  }
+
+  .pomo-count,
+  .state-text {
+    color: white;
+  }
+}
