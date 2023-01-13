@@ -88,7 +88,7 @@ function App() {
           body: nextStateText,
           icon: "/notif-icon.svg",
         });
-        playAudio("/src/assets/alarm-sound.wav");
+        playAudio("/src/sounds/alarm-sound.wav");
       }
     });
   }
@@ -115,13 +115,13 @@ function App() {
         <SelectButtons
           handleState={changeState}
           selectedBtn={possibleStates.indexOf(currentState)}
-          handleAudio={() => playAudio("/src/assets/states-click.wav")}
+          handleAudio={() => playAudio("/src/sounds/states-click.wav")}
         />
         <Counter seconds={currentTime} />
         <button
           onClick={() => {
             pausePlayHandler();
-            playAudio("/src/assets/ss-click.wav");
+            playAudio("/src/sounds/ss-click.wav");
           }}
           className="pause-btn"
           style={{ color: currentState.bg }}
@@ -133,7 +133,7 @@ function App() {
             onClick={() => {
               if (isCounting) {
                 nextState();
-                playAudio("/src/assets/next-click.wav");
+                playAudio("/src/sounds/next-click.wav");
               }
             }}
             className="next-btn"
